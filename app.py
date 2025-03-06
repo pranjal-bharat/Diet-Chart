@@ -4,7 +4,8 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load dataset
-df = pd.read_csv('C:/Users/Pranjal/OneDrive/Desktop/diet-chart/INDB(Indian Nutrient Databank).csv')
+# df = pd.read_csv('C:/Users/Pranjal/OneDrive/Desktop/diet-chart/INDB(Indian Nutrient Databank).csv')
+df = pd.read_csv('INDB(Indian_Nutrient_Databank).csv')
 
 # Convert relevant columns to numeric
 numeric_columns = ['energy_kcal', 'carb_g', 'protein_g', 'fat_g', 'freesugar_g', 'fibre_g', 'sodium_mg', 'potassium_mg', 'cholesterol_mg']
