@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Chart</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+{% if diet_chart %}
+    <div class="diet-chart">
+        <h2>Recommended Diet Chart</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Meal</th>
+                    <th>Recommended Items</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for meal, items in diet_chart.items() %}
+                <tr>
+                    <td>{{ meal }}</td>
+                    <td>{{ items | join(" or ") }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <br>
+        <a href="{{ url_for('index') }}">
+            <button>Go Back</button>
+        </a>
+    </div>
+{% else %}
+    <p>No diet chart available. Please go back and enter details.</p>
+    <a href="{{ url_for('index') }}">
+        <button>Go Back</button>
+    </a>
+{% endif %}
+
+</body>
+</html>

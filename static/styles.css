@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    background-image: url('dietchartimage.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+
+    background: linear-gradient(to bottom right, #f0f8ff, #ffffff);
+
+}
+
+
+
+/* .corner-image {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px; 
+    opacity: 0.7; 
+  }
+  
+  .corner-image img {
+    width: 50%;
+    height: auto;
+  } */
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background: green;
+    color: rgb(248, 245, 245);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkgreen;
+}
+
+.diet-chart {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+th {
+    background: lightgray;
+}
+
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.diet-chart {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    background: linear-gradient(to bottom right, #f0f8ff, #ffffff);
+}
+
+/* Heading */
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+}
+
+td {
+    background-color: #f4f4f4;
+}
+
+/* Hover effect */
+tr:hover {
+    background-color: #e2f3e9;
+    transition: 0.3s;
+}
+
+/* Button Styling
+button {
+    background-color: #00ff91;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transition: 0.3s;
+} */

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Planner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Diet Planner</h1>
+
+        <form method="POST">
+            <label for="age">Enter Your Age:</label>
+            <input type="number" name="age" id="age" required>
+
+            <label for="health_condition">Select Your Health Condition:</label>
+            <select name="health_condition" id="health_condition">
+                <option value="none">No Health Issues</option>
+                <option value="high_protein">High Protein</option>
+                <option value="low_sugar">Low Sugar</option>
+                <option value="hypertension">Hypertension</option>
+                <option value="kidney_disease">Kidney Disease</option>
+                <option value="diabetes">Diabetes</option>
+                <option value="obesity">Obesity</option>
+                <option value="heart_disease">Heart Disease</option>
+            </select>
+
+
+            <label>Preferred Diet:</label>
+    <select name="diet_preference">
+        <option value="vegetarian">Vegetarian</option>
+        <option value="non-vegetarian">Non-Vegetarian</option>
+        <option value="anything">Anything</option>
+    </select><br>
+
+    
+            <button type="submit">Generate Diet Chart</button>
+        </form>
+<!--
+        {% if diet_chart %}
+            <div class="diet-chart">
+                <h2>Recommended Diet Chart</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Meal</th>
+                            <th>Recommended Items</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for meal, items in diet_chart.items() %}
+                        <tr>
+                            <td>{{ meal }}</td>
+                            <td>{{ items | join(" or ") }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        {% endif %} -->
+    </div>
+</body>
+</html>
